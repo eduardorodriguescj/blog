@@ -1,0 +1,205 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="css/home.css" media="all"/>
+	<title>Bem vindo ao site </title>
+</head>
+<body>
+		<header>
+		<img id="imgHeader" alt="Logotipo" src="css/img/screamo.jpg"/>
+		
+			<nav id="menu">
+				<ul>
+					<li><a href="home.html">HOME</a></li>
+					<li><a href="#">LINKS</a></li>
+					<li><a href="#">CONTATO</a></li>
+				</ul>
+			</nav>
+			</header>
+			<div class="slideshow-container">
+<div class="mySlides fade">
+<img src="css/img/Motionless_in_White.jpg" alt="Banda de rock (screamo) que se chama Motionless in White" style="width:100%">  
+<div class="text">Motionless in White</div>
+</div>
+
+
+<div class="mySlides fade">
+  <img src="css/img/whitechapel.jpg" alt="Banda de rock (screamo) que se chama Whitechapel" style="width:100%">
+  <div class="text">Whitechapel</div>
+</div>
+
+
+<div class="mySlides fade">
+  <img src="css/img/thy_art_is_murder.jpg" alt="Banda de rock (screamo) que se chama Thy Art is Murder" style="width:100%">
+  <div class="text">Thy Art is Murder</div>
+</div>
+
+
+<div class="mySlides fade">
+  <img src="css/img/miss_may_I2.jpg" alt="Banda de rock (screamo) que se chama Miss May I" style="width:100%">
+  <div class="text">Miss May I</div>
+</div>  
+
+
+<div class="mySlides fade">
+  <img src="css/img/bad_omens.png" alt="Banda de rock (screamo) que se chama Bad Omens" style="width:100%">
+  <div class="text">Bad Omens</div>
+</div>
+
+
+<div class="mySlides fade">
+  <img src="css/img/inversa2.jpg" alt="Banda de rock (screamo) que se chama Inversa" style="width:100%">
+  <div class="text">Inversa</div>
+</div>
+
+
+<div class="mySlides fade">
+  <img src="css/img/volumes2.jpg" alt="Banda de rock (screamo) que se chama Volumes" style="width:100%">
+  <div class="text">Volumes</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="css/img/within_destruction2.jpg" alt="Banda de rock (screamo) que se chama Within Destruction" style="width:100%">
+  <div class="text">Within Destruction</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="css/img/slipknot2.jpg" alt="Banda de rock (screamo) que se chama Slipknot" style="width:100%">
+  <div class="text">Slipknot</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img class="zoom" src="css/img/after_the_burial.jpg" alt="Banda de rock (screamo) que se chama After the burial" style="width:100%">
+      <div class="container">
+        <h2>After the burial</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <button class="button"><a href="http://www.aftertheburial.net/">SITE</a></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img class="zoom" src="css/img/asking_alexandria.jpg" alt="Banda de rock (screamo) que se chama Asking Alexandria" style="width:100%">
+      <div class="container">
+        <h2>Asking Alexandria</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button"><a href="https://www.askingalexandria.com/home/">SITE</a></button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img class="zoom" src="css/img/suicidesilence.jpg" alt="Banda de rock (screamo) que se chama Suicide Silence" style="width:100%">
+      <div class="container">
+        <h2>Suicide Silence</h2>
+        <p class="title">Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button"><a href="http://suicidesilence.net/">SITE</a></button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img class="zoom" src="css/img/Motionless_in_White.jpg" alt="Banda de rock (screamo) que se chama Motionless in White" style="width:100%">
+      <div class="container">
+        <h2>Motionless in White</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button"><a href="http://www.motionlessinwhite.net/">SITE</a></button></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <img class="zoom" src="css/img/whitechapel.jpg" alt="Banda de rock (screamo) que se chama Whitechapel" style="width:100%">
+      <div class="container">
+        <h2>Whitechapel</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button"><a href="https://www.whitechapelband.com/">SITE</a></button></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <img class="zoom" src="css/img/slaughter_to_prevail.jpg" alt="Banda de rock (screamo) que se chama Slaughter to Prevail" style="width:100%">
+      <div class="container">
+        <h2>Slaughter to Prevail</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button"><a href="https://www.slaughtertoprevailmerch.com/">SITE</a></button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>	
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="home.html">1</a>
+  <a href="page2.html">2</a>
+  <a href="page3.html">3</a>
+  <a href="page4.html">4</a>
+  <a href="page5.html">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+			<footer>
+			<p>Copyright &copy; Eduardo Rodrigues 2018, todos os clientes reservados.</p>
+			</footer>
+</body>
+</html>
